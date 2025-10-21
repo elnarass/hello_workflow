@@ -1,2 +1,4 @@
 mkdir -p .github/workflows
-
+git add .github/Workflow/hello-world.yml
+git commit -m "Add hello-world workflow (Hello from Эльнара)"
+git push origin main
