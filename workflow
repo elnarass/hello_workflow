@@ -1,1 +1,19 @@
 nano .github/workflows/hello-world.yml
+name: Hello CI workflow
+
+on:
+  push:
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Hello step
+        run: echo "Hello from Эльнара"
+
+      - name: Show OS info
+        run: uname -a
